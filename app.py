@@ -13,7 +13,7 @@ import io
 
 # Load the Dataset
 def load_data():
-    data = pd.read_csv("dataset_clean.csv")
+    data = pd.read_csv("HousingData.csv")
     return data
 
 # Load the Model (if we want to use pre-trained model)
