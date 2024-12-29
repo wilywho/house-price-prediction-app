@@ -23,7 +23,10 @@ def load_model():
 
 # Define the Streamlit App
 def main():
-    st.title("House Price Prediction App")
+    st.title("Data Science Project")
+    st.markdown("##### Laboratory of Energy Mangement Bandung Institute of Technology")
+    st.markdown("###### Research Engineer: Farhan Wily S.T.")
+    st.header('House Price Prediction App')
     st.write("Predict house prices based on selected features and model type.")
 
     # Load the dataset
