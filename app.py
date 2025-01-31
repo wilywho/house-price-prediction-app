@@ -36,6 +36,25 @@ def main():
     st.subheader("Dataset Housing Prices")
     st.write(df.head(10))
 
+    # Feature Descriptions
+    st.subheader("Feature Descriptions")
+    st.write("""
+    - **CRIM**: Crime rate per capita.
+    - **ZN**: Proportion of residential land zoned for large lots.
+    - **INDUS**: Proportion of non-retail business acres per town.
+    - **CHAS**: Charles River dummy variable (1 if tract bounds river; 0 otherwise).
+    - **NOX**: Nitrogen oxides concentration (parts per 10 million).
+    - **RM**: Average number of rooms per dwelling.
+    - **AGE**: Proportion of owner-occupied units built before 1940.
+    - **DIS**: Weighted distances to five Boston employment centers.
+    - **RAD**: Index of accessibility to radial highways.
+    - **TAX**: Full-value property tax rate per $10,000.
+    - **PTRATIO**: Pupil-teacher ratio by town.
+    - **B**: Proportion of residents of African American descent.
+    - **LSTAT**: Percentage of lower-status population.
+    - **MEDV**: Median value of owner-occupied homes in $1000s (target variable).
+    """)
+
     # Feature selection using checkboxes or multiselect
     st.subheader("Select Features for Prediction")
     features = df.drop("MEDV", axis=1)
